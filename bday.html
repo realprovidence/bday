@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>For Ujjwala ❤️</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+
+body{
+    margin:0;
+    min-height:100vh;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(145deg,#14001f,#32004d,#120018);
+    color:white;
+    overflow-x:hidden;
+    text-align:center;
+}
+
+.page{
+    min-height:100vh;
+    padding:25px 18px 40px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.glow{
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:#ff4fd8;
+    filter:blur(100px);
+    opacity:.22;
+    border-radius:50%;
+    top:-80px;
+    left:-80px;
+}
+
+.glow2{
+    position:absolute;
+    width:220px;
+    height:220px;
+    background:#7c4dff;
+    filter:blur(100px);
+    opacity:.25;
+    border-radius:50%;
+    bottom:-80px;
+    right:-80px;
+}
+
+h1{
+    font-size:34px;
+    margin:5px 0 8px;
+    animation:fade 1.5s ease;
+}
+
+.name{
+    background:linear-gradient(90deg,#ff7adf,#ffd0f5,#ff7adf);
+    -webkit-background-clip:text;
+    color:transparent;
+    background-size:200%;
+    animation:shine 3s infinite;
+}
+
+.subtitle{
+    font-size:15px;
+    opacity:.8;
+    margin-bottom:22px;
+}
+
+.card{
+    width:100%;
+    max-width:420px;
+    padding:24px 18px;
+    border-radius:25px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    box-shadow:0 15px 50px rgba(0,0,0,.35);
+    position:relative;
+    z-index:2;
+}
+
+.cake{
+    font-size:80px;
+    margin:5px 0 8px;
+    filter:drop-shadow(0 0 18px #ff69d4);
+}
+
+.instruction{
+    font-size:14px;
+    opacity:.75;
+    margin-bottom:18px;
+}
+
+.candle{
+    width:54px;
+    height:70px;
+    margin:0 auto 20px;
+    position:relative;
+    cursor:pointer;
+}
+
+.candleBody{
+    width:25px;
+    height:55px;
+    background:linear-gradient(90deg,#fff,#ff9de7,#fff);
+    border-radius:4px;
+    position:absolute;
+    bottom:0;
+    left:15px;
+}
+
+.flame{
+    position:absolute;
+    width:22px;
+    height:32px;
+    background:linear-gradient(#fff176,#ff9800,#ff3d00);
+    border-radius:50% 50% 50% 50%;
+    transform:rotate(45deg);
+    top:-4px;
+    left:16px;
+    box-shadow:0 0 25px 8px rgba(255,170,0,.55);
+    animation:flicker .15s infinite alternate;
+}
+
+.flame.off{
+    display:none;
+}
+
+button{
+    width:100%;
+    border:0;
+    padding:15px;
+    margin-top:12px;
+    border-radius:16px;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    background:linear-gradient(135deg,#ff3cac,#784ba0);
+    box-shadow:0 8px 22px rgba(255,60,180,.25);
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+.message{
+    display:none;
+    margin-top:18px;
+    padding:18px;
+    border-radius:18px;
+    background:rgba(255,255,255,.07);
+    line-height:1.65;
+    font-size:15px;
+    animation:fade .7s ease;
+}
+
+.message.show{
+    display:block;
+}
+
+.signature{
+    margin-top:22px;
+    font-size:16px;
+    font-weight:bold;
+    color:#ffb8ed;
+}
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:20px;
+    animation:float 4s linear forwards;
+    pointer-events:none;
+    z-index:10;
+}
+
+.confetti{
+    position:fixed;
+    top:-20px;
+    font-size:20px;
+    animation:fall 3s linear forwards;
+    z-index:20;
+    pointer-events:none;
+}
+
+.final{
+    display:none;
+    margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+    animation:pulse 1.5s infinite;
+}
+
+.final.show{
+    display:block;
+}
+
+@keyframes fade{
+    from{opacity:0;transform:translateY(15px)}
+    to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes shine{
+    0%{background-position:0%}
+    50%{background-position:100%}
+    100%{background-position:0%}
+}
+
+@keyframes flicker{
+    from{transform:rotate(42deg) scale(.95)}
+    to{transform:rotate(48deg) scale(1.08)}
+}
+
+@keyframes float{
+    to{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+        opacity:0;
+    }
+}
+
+@keyframes pulse{
+    50%{transform:scale(1.06)}
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="glow"></div>
+<div class="glow2"></div>
+
+<div class="card">
+
+<div class="cake">🎂</div>
+
+<h1>Happy Birthday<br>
+<span class="name">Ujjwala ❤️</span>
+</h1>
+
+<div class="subtitle">
+My Chomi is officially 15 today! 🥹✨
+</div>
+
+<div class="instruction">
+🕯️ Tap the candle to make a birthday wish
+</div>
+
+<div class="candle" onclick="blowCandle()">
+    <div class="flame" id="flame"></div>
+    <div class="candleBody"></div>
+</div>
+
+<div id="wishText" style="font-size:14px;opacity:.7;">
+Make your wish first... 🌙
+</div>
+
+<button onclick="openMessage()">
+💌 Open My Birthday Message
+</button>
+
+<div class="message" id="message">
+
+<p>
+Heyyy Chomiiii 🥹❤️
+</p>
+
+<p>
+Today is your <b>15th birthday</b> and I just wanted to make
+something special for you. 🎂✨
+</p>
+
+<p>
+I know haal hi mein hum dono ke beech thodi fight hui...
+aur shayad isi wajah se tu mujhse baat bhi nahi kar rahi.
+But honestly, I don't want our little fights to erase all
+the beautiful memories we've made. 🫂
+</p>
+
+<p>
+You're not just some random online friend for me.
+You're my <b>long-distance bestie</b>, my Chomi,
+and someone who genuinely matters to me. ❤️
+</p>
+
+<p>
+This is our <b>first birthday</b> that I'm celebrating with you,
+and distance doesn't change that I'm wishing you from
+the bottom of my heart. 🌙✨
+</p>
+
+<p>
+I hope your 15th year brings you sooo much happiness,
+peace, success, laughter and countless beautiful memories. 🥹💗
+</p>
+
+<p>
+And haan... agar kabhi meri kisi baat se tujhe hurt hua ho,
+I'm genuinely sorry. ❤️
+</p>
+
+<p>
+No matter how far we are,
+I'll always be happy that I met you. 🫶
+</p>
+
+<div class="signature">
+Happy 15th Birthday, Chomi 🎂💗<br><br>
+— Your Plovi Chaann 🌙❤️
+</div>
+
+</div>
+
+<button onclick="surprise()">
+🎁 One Last Surprise
+</button>
+
+<div class="final" id="final">
+I hope you're smiling right now, Chomi. 🥹❤️
+<br>
+Stay happy. Always. 🌙✨
+</div>
+
+</div>
+</div>
+
+<script>
+
+function blowCandle(){
+
+    const flame = document.getElementById("flame");
+    const wish = document.getElementById("wishText");
+
+    flame.classList.add("off");
+
+    wish.innerHTML =
+    "✨ Wish made! Happy Birthday Chomi! 🎂❤️";
+
+    confetti();
+
+    for(let i=0;i<12;i++){
+        setTimeout(createHeart,i*120);
+    }
+}
+
+function openMessage(){
+
+    const msg = document.getElementById("message");
+
+    msg.classList.toggle("show");
+
+    if(msg.classList.contains("show")){
+        for(let i=0;i<8;i++){
+            setTimeout(createHeart,i*180);
+        }
+    }
+}
+
+function surprise(){
+
+    const final = document.getElementById("final");
+
+    final.classList.add("show");
+
+    confetti();
+
+    for(let i=0;i<20;i++){
+        setTimeout(createHeart,i*100);
+    }
+
+    window.scrollTo({
+        top:document.body.scrollHeight,
+        behavior:"smooth"
+    });
+}
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    const hearts = ["❤️","💗","💖","💕","💞","✨","🌙"];
+
+    heart.className="heart";
+    heart.innerHTML=hearts[Math.floor(Math.random()*hearts.length)];
+
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(15+Math.random()*18)+"px";
+    heart.style.animationDuration=(3+Math.random()*3)+"s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },6000);
+}
+
+function confetti(){
+
+    const pieces=["🎉","✨","🎊","💗","❤️","🌸","⭐"];
+
+    for(let i=0;i<35;i++){
+
+        const c=document.createElement("div");
+
+        c.className="confetti";
+        c.innerHTML=pieces[Math.floor(Math.random()*pieces.length)];
+
+        c.style.left=Math.random()*100+"vw";
+        c.style.animationDuration=(2+Math.random()*2)+"s";
+        c.style.fontSize=(15+Math.random()*18)+"px";
+
+        document.body.appendChild(c);
+
+        setTimeout(()=>{
+            c.remove();
+        },4500);
+    }
+}
+
+/* Soft floating hearts automatically */
+setInterval(()=>{
+    if(Math.random()>.45) createHeart();
+},1200);
+
+</script>
+
+</body>
+</html>
